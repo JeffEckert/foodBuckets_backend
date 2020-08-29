@@ -6,12 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Calendar_date.destroy_all
+CalendarDate.destroy_all
 JournalEntry.destroy_all
 
-Calendar_date.create(calendar_date: "August 29, 2020")
+CalendarDate.create(date: "August 29, 2020")
 
 
 JournalEntry.create(meal: "Breakfast", description: "Sandwich thin, egg, canadian bacon, chedder cheese", 
-calorie_count: 310, image_url: "https://1.bp.blogspot.com/_dDpVy2QcSh4/TCKT3Tx3S7I/AAAAAAAAAN4/Ng9U8P1CGAg/s1600/DSCN1756.JPG"
- date_id: date.id)
+calorie_count: 310, image_url: "https://1.bp.blogspot.com/_dDpVy2QcSh4/TCKT3Tx3S7I/AAAAAAAAAN4/Ng9U8P1CGAg/s1600/DSCN1756.JPG")
