@@ -6,7 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Calendar_date.destroy_all
+JournalEntry.destroy_all
 
+Calendar_date.create(calendar_date: "August 29, 2020")
 
 
 JournalEntry.create(meal: "Breakfast", description: "Sandwich thin, egg, canadian bacon, chedder cheese", 
