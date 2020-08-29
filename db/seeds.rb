@@ -10,4 +10,5 @@
 
 
 JournalEntry.create(meal: "Breakfast", description: "Sandwich thin, egg, canadian bacon, chedder cheese", 
-calorie_count: 310, date_id: date.id)
+calorie_count: 310, image_url: "https://1.bp.blogspot.com/_dDpVy2QcSh4/TCKT3Tx3S7I/AAAAAAAAAN4/Ng9U8P1CGAg/s1600/DSCN1756.JPG"
+ date_id: date.id)
