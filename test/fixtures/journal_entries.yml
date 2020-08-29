@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meal: MyString
+  description: MyString
+  date_id: 1
+  calorie_count: 1
+
+two:
+  meal: MyString
+  description: MyString
+  date_id: 1
+  calorie_count: 1
