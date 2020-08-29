@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_08_29_144319) do
   enable_extension "plpgsql"
 
   create_table "calendar_dates", force: :cascade do |t|
-    t.integer "date"
+    t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
