@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+
+JournalEntry.create(meal: "Breakfast", description: "Sandwich thin, egg, canadian bacon, chedder cheese", 
+calorie_count: 310, date_id: date.id)
