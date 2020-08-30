@@ -9,8 +9,7 @@
 CalendarDate.destroy_all
 JournalEntry.destroy_all
 
-CalendarDate.create(date: "August 29, 2020")
-
+testdate = CalendarDate.create(date: "8/29/2020")
 
 JournalEntry.create(meal: "Breakfast", description: "Sandwich thin, egg, canadian bacon, chedder cheese", 
-calorie_count: 310, image_url: "https://1.bp.blogspot.com/_dDpVy2QcSh4/TCKT3Tx3S7I/AAAAAAAAAN4/Ng9U8P1CGAg/s1600/DSCN1756.JPG")
+calorie_count: 310, image_url: "https://1.bp.blogspot.com/_dDpVy2QcSh4/TCKT3Tx3S7I/AAAAAAAAAN4/Ng9U8P1CGAg/s1600/DSCN1756.JPG", calendar_date_id: testdate.id )
