@@ -6,7 +6,11 @@ class Api::V1::JournalEntriesController < ApplicationController
     end
 
     def create
-        journal_entries = JournalEntry.new(journal_entry_params)
+        journal_entry = JournalEntry.new(journal_entry_params)
+        if journal_entry.save
+            render json: journal_entry, status: :accepted 
+        else
+            render json: {errors: journal_entry.errors.full_messages}, status: :uprocessable_entity
     end
 
     private
