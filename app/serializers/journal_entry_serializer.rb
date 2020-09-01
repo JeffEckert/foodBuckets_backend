@@ -1,4 +1,4 @@
 class JournalEntrySerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :meal, :description, :image_url, :calorie_count, :calendar_date_id
 end

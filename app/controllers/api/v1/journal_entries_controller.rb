@@ -1,8 +1,8 @@
 class Api::V1::JournalEntriesController < ApplicationController
 
     def index
-        journal_entries = JournalEntry.all 
-        render json: journal_entries
+        @journal_entries = JournalEntry.all 
+        render json: JournalEntriesSerializer.new(@journal_entries)
     end
 
     def create
