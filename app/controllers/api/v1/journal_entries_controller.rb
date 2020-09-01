@@ -1,8 +1,8 @@
 class Api::V1::JournalEntriesController < ApplicationController
 
     def index
-        @journal_entries = JournalEntry.all 
-        render json: JournalEntriesSerializer.new(@journal_entries)
+        journal_entries = JournalEntry.all 
+        render json: JournalEntrySerializer.new(journal_entries)
     end
 
     def create
@@ -11,6 +11,7 @@ class Api::V1::JournalEntriesController < ApplicationController
             render json: journal_entry, status: :accepted 
         else
             render json: {errors: journal_entry.errors.full_messages}, status: :uprocessable_entity
+        end
     end
 
     private
