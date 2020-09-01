@@ -1,4 +1,4 @@
 class CalendarDateSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :date
 end
