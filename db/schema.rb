@@ -26,11 +26,11 @@ ActiveRecord::Schema.define(version: 2020_08_29_144319) do
     t.string "description"
     t.string "image_url"
     t.string "date"
-    t.bigint "catagory_id"
+    t.bigint "category_id"
     t.integer "calorie_count"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["catagory_id"], name: "index_journal_entries_on_catagory_id"
+    t.index ["category_id"], name: "index_journal_entries_on_category_id"
   end
 
 end
