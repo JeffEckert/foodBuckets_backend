@@ -5,7 +5,7 @@ class CreateJournalEntries < ActiveRecord::Migration[6.0]
       t.string :description
       t.string :image_url
       t.string :date
-      t.belongs_to :catagory
+      t.belongs_to :category
       t.integer :calorie_count
       
       t.timestamps

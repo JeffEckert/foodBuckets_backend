@@ -18,6 +18,6 @@ class Api::V1::JournalEntriesController < ApplicationController
     private
 
     def journal_entry_params
-        params.require(:journal_entry).permit(:meal, :description, :image_url, :calorie_count, :catagory_id, :date)
+        params.require(:journal_entry).permit(:meal, :description, :image_url, :calorie_count, :category_id, :date)
     end
 end

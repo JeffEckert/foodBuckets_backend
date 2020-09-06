@@ -1,23 +1,23 @@
-class Api::V1::CatagoriesController < ApplicationController
+class Api::V1::CategoriesController < ApplicationController
 
     def index
-        catagories = Catagory.all 
-        render json: CatagorySerializer.new(catagories)
+        categories = Category.all 
+        render json: CategorySerializer.new(categories)
     end
 
     def create 
-        catagory = Catagory.new(catagory_params)
-        if catagory.save
-            render json: catagory, status: :accepted 
+        category = Category.new(category_params)
+        if category.save
+            render json: category, status: :accepted 
         else
-            render json: {errors: catagory.errors.full_messages}, status: :uprocessable_entity
+            render json: {errors: category.errors.full_messages}, status: :uprocessable_entity
         end
     end
 
 
     private
 
-    def catagory_params
-        params.require(:Catagory).permit(:catagory)
+    def category_params
+        params.require(:Category).permit(:category)
     end
 end
