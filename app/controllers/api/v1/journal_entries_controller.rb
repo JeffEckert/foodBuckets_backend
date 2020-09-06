@@ -7,6 +7,7 @@ class Api::V1::JournalEntriesController < ApplicationController
 
     def create
         journal_entry = JournalEntry.new(journal_entry_params)
+        # byebug
         if journal_entry.save
             render json: journal_entry, status: :accepted 
         else
@@ -17,6 +18,6 @@ class Api::V1::JournalEntriesController < ApplicationController
     private
 
     def journal_entry_params
-        params.require(:Journal_entry).permit(:meal, :description, :image_url, :calorie_count, :calendar_date_id)
+        params.require(:journal_entry).permit(:meal, :description, :image_url, :calorie_count, :catagory_id, :date)
     end
 end

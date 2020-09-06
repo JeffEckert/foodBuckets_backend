@@ -1,3 +1,3 @@
 class JournalEntry < ApplicationRecord
-    belongs_to :calendar_date
+    belongs_to :catagories
 end
