@@ -1,3 +1,3 @@
 class JournalEntry < ApplicationRecord
-    belongs_to :catagories
+    belongs_to :catagory
 end
