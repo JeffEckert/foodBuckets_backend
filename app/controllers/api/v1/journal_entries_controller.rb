@@ -9,10 +9,14 @@ class Api::V1::JournalEntriesController < ApplicationController
         journal_entry = JournalEntry.new(journal_entry_params)
         # byebug
         if journal_entry.save
-            render json: journal_entry, status: :accepted 
+            render json: JournalEntrySerializer.new(journal_entry) 
         else
             render json: {errors: journal_entry.errors.full_messages}, status: :uprocessable_entity
         end
+    end
+
+    def delete
+
     end
 
     private
