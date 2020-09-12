@@ -15,8 +15,9 @@ class Api::V1::JournalEntriesController < ApplicationController
         end
     end
 
-    def delete
-
+    def destroy
+      journal_entry =  JournalEntry.find(params[:id])
+      journal_entry.destroy
     end
 
     private
